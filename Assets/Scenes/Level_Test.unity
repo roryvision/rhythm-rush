@@ -2096,9 +2096,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteFlipPrefab: {fileID: 5433631502311583759, guid: 959e3cddf90234e748c06a3d8aa82a06, type: 3}
+  noteShakePrefab: {fileID: 5433631502311583759, guid: 59bee601d04b84d439a8e1bf9aa72dca, type: 3}
   notesFlip:
-  - 5
   - 10
+  - 25
+  notesShake:
   - 15
 --- !u!4 &1614010306
 Transform:
