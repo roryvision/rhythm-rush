@@ -12,6 +12,7 @@ public class NoteFlipScript : MonoBehaviour
     void Start()
     {
         game = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
+
         initialAccel = Input.acceleration;
         currentAccel = Vector3.zero;
     }
@@ -27,6 +28,7 @@ public class NoteFlipScript : MonoBehaviour
         }
 
         currentAccel = Vector3.Lerp(currentAccel, Input.acceleration - initialAccel, Time.deltaTime);
+        
         if (currentAccel.z > 0.1f)
         {
             Hit();
